@@ -1,0 +1,6 @@
+name: MeteoritePlugin
+version: '1.0-SNAPSHOT'
+main: org.cameronoremac101.meteoritePlugin.MeteoritePlugin
+api-version: '1.21'
+commands:
+  createmeteor:
