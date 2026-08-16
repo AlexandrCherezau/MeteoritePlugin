@@ -41,12 +41,12 @@ public class MeteorService {
         display.setTransformation(transform);
 
         new BukkitRunnable() {
-            double speed = 1; // скорость падения
+            double speed = 1; 
 
             @Override
             public void run() {
                 Location current = display.getLocation();
-                current.subtract(0, speed, 0); // опускаем метеорит
+                current.subtract(0, speed, 0); 
                 display.teleport(current);
 
                 if (current.getBlock().getType().isSolid() || current.getY() <= targetBlock.getY()) {
@@ -62,7 +62,5 @@ public class MeteorService {
             }
         }.runTaskTimer(MeteoritePlugin.getInstance(), 0L, 1L);
     }
-
-
 
 }

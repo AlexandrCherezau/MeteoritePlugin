@@ -17,7 +17,6 @@ public class SpawnMeteorCommand implements CommandExecutor {
 
         player.getInventory().addItem(MeteoritePlugin.getStaffItem().CreateStaffItem());
 
-
         return false;
     }
 }
